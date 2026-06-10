@@ -1,0 +1,122 @@
+.ranking-page {
+  min-height: 100vh;
+  padding: 24px 16px;
+  color: white;
+  background:
+    radial-gradient(circle at top left, #6D28FF 0%, transparent 35%),
+    radial-gradient(circle at bottom left, #FF2D20 0%, transparent 40%),
+    radial-gradient(circle at top right, #7A1A10 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #C6FF00 0%, transparent 35%),
+    #090b17;
+}
+
+.ranking-wrapper {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.ranking-title {
+  font-family: var(--font-logo);
+  text-align: center;
+  font-size: 46px;
+  line-height: 1.2;
+  padding: 8px 0 4px;
+  background: linear-gradient(90deg, #6D28FF, #FF2D20, #FF6A00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ranking-subtitle {
+  text-align: center;
+  color: rgba(255,255,255,.7);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ranking-card {
+  width: 100%;
+  border-radius: 28px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(109,40,255,.16),
+      rgba(255,45,32,.14),
+      rgba(255,106,0,.12)
+    );
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255,255,255,.16);
+  box-shadow:
+    0 26px 50px rgba(109,40,255,.22),
+    0 18px 35px rgba(255,45,32,.16);
+}
+
+.ranking-position {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-logo);
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(135deg, #6D28FF, #FF2D20, #FF6A00);
+  box-shadow: 0 12px 24px rgba(255,45,32,.35);
+}
+
+.ranking-user {
+  flex: 1;
+  min-width: 0;
+}
+
+.ranking-name {
+  font-size: 17px;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ranking-email {
+  font-size: 11px;
+  color: rgba(255,255,255,.45);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ranking-points {
+  min-width: 70px;
+  text-align: right;
+}
+
+.ranking-points span {
+  display: block;
+  font-size: 26px;
+  font-weight: 900;
+  color: #FF6A00;
+}
+
+.ranking-points small {
+  font-size: 11px;
+  color: rgba(255,255,255,.55);
+}
+
+.ranking-empty {
+  margin-top: 32px;
+  text-align: center;
+  color: rgba(255,255,255,.65);
+  font-size: 14px;
+}

@@ -1,0 +1,89 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at top left, #ff512f, transparent 30%),
+    radial-gradient(circle at top right, #dd2476, transparent 30%),
+    radial-gradient(circle at bottom center, #ff8c42, transparent 35%),
+    #0f0f14;
+}
+
+.register-card {
+  width: 90%;
+  max-width: 450px;
+
+  padding: 40px;
+  border-radius: 30px;
+
+  backdrop-filter: blur(20px);
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 0 50px rgba(221,36,118,0.25);
+}
+
+.logo {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.register-card h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-card input {
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+}
+
+.register-card button {
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  background: linear-gradient(
+    135deg,
+    #ff512f,
+    #dd2476
+  );
+
+  color: white;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.login-link a {
+  color: #ff8c42;
+  text-decoration: none;
+  font-weight: bold;
+}
