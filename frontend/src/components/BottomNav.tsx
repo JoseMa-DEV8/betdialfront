@@ -5,8 +5,7 @@ import {
   House,
   Trophy,
   Globe,
-  CircleDot,
-  Star,
+  CircleDot
 } from "lucide-react";
 
 export default function BottomNav() {

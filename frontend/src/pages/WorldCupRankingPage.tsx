@@ -23,7 +23,7 @@ export default function RankingPage() {
   const loadRanking = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/worldcups/${worldCupId}/ranking`
+        `import.meta.env.VITE_API_URL/worldcups/${worldCupId}/ranking`
       );
 
       const data = await response.json();

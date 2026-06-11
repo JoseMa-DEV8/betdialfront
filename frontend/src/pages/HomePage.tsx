@@ -24,7 +24,7 @@ export default function HomePage() {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/worldcups/${worldCupId}/ranking`
+        `import.meta.env.VITE_API_URL/worldcups/${worldCupId}/ranking`
       );
 
       const data = await response.json();
@@ -57,7 +57,7 @@ export default function HomePage() {
     setLoadingJoin(true);
 
     try {
-      const response = await fetch("http://localhost:3000/api/worldcups/join", {
+      const response = await fetch("import.meta.env.VITE_API_URL/worldcups/join", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -99,7 +99,7 @@ export default function HomePage() {
     setLoadingCreate(true);
 
     try {
-      const response = await fetch("http://localhost:3000/api/worldcups", {
+      const response = await fetch("import.meta.env.VITE_API_URL/worldcups", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -23,7 +23,7 @@ export default function MyWorldCupsPage() {
   const loadWorldCups = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/users/${userId}/worldcups`
+        `import.meta.env.VITE_API_URL/users/${userId}/worldcups`
       );
 
       const data = await response.json();
